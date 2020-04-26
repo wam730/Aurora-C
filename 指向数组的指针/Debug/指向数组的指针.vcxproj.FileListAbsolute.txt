@@ -1,0 +1,2 @@
+D:\source\my-c-code\指向数组的指针\Debug\指向数组的指针.exe
+D:\source\my-c-code\指向数组的指针\Debug\指向数组的指针.pdb

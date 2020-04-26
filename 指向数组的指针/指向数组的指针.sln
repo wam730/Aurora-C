@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30011.22
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "指向数组的指针", "指向数组的指针.vcxproj", "{9CA75AE3-74DD-4F25-A0CC-77B88B164001}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9CA75AE3-74DD-4F25-A0CC-77B88B164001}.Debug|x64.ActiveCfg = Debug|x64
+		{9CA75AE3-74DD-4F25-A0CC-77B88B164001}.Debug|x64.Build.0 = Debug|x64
+		{9CA75AE3-74DD-4F25-A0CC-77B88B164001}.Debug|x86.ActiveCfg = Debug|Win32
+		{9CA75AE3-74DD-4F25-A0CC-77B88B164001}.Debug|x86.Build.0 = Debug|Win32
+		{9CA75AE3-74DD-4F25-A0CC-77B88B164001}.Release|x64.ActiveCfg = Release|x64
+		{9CA75AE3-74DD-4F25-A0CC-77B88B164001}.Release|x64.Build.0 = Release|x64
+		{9CA75AE3-74DD-4F25-A0CC-77B88B164001}.Release|x86.ActiveCfg = Release|Win32
+		{9CA75AE3-74DD-4F25-A0CC-77B88B164001}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E579B290-56B3-4857-8F18-E9F97E8A78E1}
+	EndGlobalSection
+EndGlobal
