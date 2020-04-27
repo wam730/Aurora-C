@@ -1,0 +1,4 @@
+﻿  通过指针寻找指定元素.cpp
+D:\source\my-c-code\寻找指定元素的指针\通过指针寻找指定元素.cpp(14,9): warning C4477: “printf”: 格式字符串“%d”需要类型“int”的参数，但可变参数 1 拥有了类型“int *”
+D:\source\my-c-code\寻找指定元素的指针\通过指针寻找指定元素.cpp(19,9): warning C4477: “printf”: 格式字符串“%d”需要类型“int”的参数，但可变参数 2 拥有了类型“int *”
+  寻找指定元素的指针.vcxproj -> D:\source\my-c-code\寻找指定元素的指针\Debug\寻找指定元素的指针.exe
