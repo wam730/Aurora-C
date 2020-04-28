@@ -1,0 +1,2 @@
+D:\source\my-c-code\月份转化为英文\Debug\月份转化为英文.exe
+D:\source\my-c-code\月份转化为英文\Debug\月份转化为英文.pdb

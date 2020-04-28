@@ -5,14 +5,14 @@ int main()
 	void sort(int array[], int n);
 	int n,
 		i,
-		a[100];
+		a[1000];
 	printf("Input n:");
 	scanf_s("%d", &n);
-	printf("Input array a:\n");
+	printf("Input array a (max 1000 nubers):\n");
 	for (i = 0; i < n; i++)
 	{
-		//scanf_s("%d", &a[i]);
-		a[i] = i;
+		scanf_s("%d", &a[i]);
+		//a[i] = i;
 	}
 	for (i = 0; i < n; i++)
 	{

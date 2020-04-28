@@ -1,0 +1,30 @@
+﻿  月份转化为英文.cpp
+D:\source\my-c-code\月份转化为英文\月份转化为英文.cpp(14,21): warning C4838: 从“int”转换到“char”需要收缩转换
+D:\source\my-c-code\月份转化为英文\月份转化为英文.cpp(15,24): warning C4305: “初始化”: 从“int”到“char”截断
+D:\source\my-c-code\月份转化为英文\月份转化为英文.cpp(14,21): warning C4309: “初始化”: 截断常量值
+D:\source\my-c-code\月份转化为英文\月份转化为英文.cpp(14,28): warning C4838: 从“int”转换到“char”需要收缩转换
+D:\source\my-c-code\月份转化为英文\月份转化为英文.cpp(14,28): warning C4309: “初始化”: 截断常量值
+D:\source\my-c-code\月份转化为英文\月份转化为英文.cpp(14,35): warning C4838: 从“int”转换到“char”需要收缩转换
+D:\source\my-c-code\月份转化为英文\月份转化为英文.cpp(14,35): warning C4309: “初始化”: 截断常量值
+D:\source\my-c-code\月份转化为英文\月份转化为英文.cpp(14,42): warning C4838: 从“int”转换到“char”需要收缩转换
+D:\source\my-c-code\月份转化为英文\月份转化为英文.cpp(14,42): warning C4309: “初始化”: 截断常量值
+D:\source\my-c-code\月份转化为英文\月份转化为英文.cpp(14,49): warning C4838: 从“int”转换到“char”需要收缩转换
+D:\source\my-c-code\月份转化为英文\月份转化为英文.cpp(14,49): warning C4309: “初始化”: 截断常量值
+D:\source\my-c-code\月份转化为英文\月份转化为英文.cpp(14,56): warning C4838: 从“int”转换到“char”需要收缩转换
+D:\source\my-c-code\月份转化为英文\月份转化为英文.cpp(14,56): warning C4309: “初始化”: 截断常量值
+D:\source\my-c-code\月份转化为英文\月份转化为英文.cpp(14,63): warning C4838: 从“int”转换到“char”需要收缩转换
+D:\source\my-c-code\月份转化为英文\月份转化为英文.cpp(14,63): warning C4309: “初始化”: 截断常量值
+D:\source\my-c-code\月份转化为英文\月份转化为英文.cpp(14,70): warning C4838: 从“int”转换到“char”需要收缩转换
+D:\source\my-c-code\月份转化为英文\月份转化为英文.cpp(14,70): warning C4309: “初始化”: 截断常量值
+D:\source\my-c-code\月份转化为英文\月份转化为英文.cpp(14,77): warning C4838: 从“int”转换到“char”需要收缩转换
+D:\source\my-c-code\月份转化为英文\月份转化为英文.cpp(14,77): warning C4309: “初始化”: 截断常量值
+D:\source\my-c-code\月份转化为英文\月份转化为英文.cpp(15,3): warning C4838: 从“int”转换到“char”需要收缩转换
+D:\source\my-c-code\月份转化为英文\月份转化为英文.cpp(15,3): warning C4309: “初始化”: 截断常量值
+D:\source\my-c-code\月份转化为英文\月份转化为英文.cpp(15,10): warning C4838: 从“int”转换到“char”需要收缩转换
+D:\source\my-c-code\月份转化为英文\月份转化为英文.cpp(15,10): warning C4309: “初始化”: 截断常量值
+D:\source\my-c-code\月份转化为英文\月份转化为英文.cpp(15,17): warning C4838: 从“int”转换到“char”需要收缩转换
+D:\source\my-c-code\月份转化为英文\月份转化为英文.cpp(15,17): warning C4309: “初始化”: 截断常量值
+月份转化为英文.obj : error LNK2019: 无法解析的外部符号 "int __cdecl english(int)" (?english@@YAHH@Z)，该符号在函数 _main 中被引用
+    已定义且可能匹配的符号上的提示:
+      "char __cdecl english(int)" (?english@@YADH@Z)
+D:\source\my-c-code\月份转化为英文\Debug\月份转化为英文.exe : fatal error LNK1120: 1 个无法解析的外部命令
