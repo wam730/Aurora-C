@@ -1,49 +1,69 @@
 #include<stdio.h>
 #include<time.h>
 #include<cstdlib>
-#define N 200000
-int ThisNum,MaxNum,i,j;
+#define N 100000000
+int ThisNum, MaxNum, i, j;
 int Subseq[N];
 void inputNumber()
 {
-	srand((unsigned)time(NULL));
-	for (i = 0; i < N; i++)
-	{
-		Subseq[i] = rand() % 10;
-		//printf("%d ", Subseq[i]);
-	}
+    srand((unsigned)time(NULL));
+    for (i = 0; i < N; i++)
+    {
+        Subseq[i] = rand() % 10;
+    }
 }
-int MaxSubseqSum1(int x[])//穷举全部情况(视频中算法2)
+int MaxSubseqSum0(int x[])//it's a bad way. N = 10000 makes it not work.
 {
-	for (i = 0; i < N; i++)
-	{
+
+    int k;
+    for (i = 0; i < N; i++)
+    {
+        for (j = i; j < N; j++)
+        {
+            ThisNum = 0;
+            for (k = i; k <= j; k++)
+            {
+                ThisNum += x[k];
+                if (ThisNum > MaxNum)
+                    MaxNum = ThisNum;
+            }
+        }
+    }
+    return MaxNum;
+}
+int MaxSubseqSum1(int x[])//Exhaustive method
+{
+    ThisNum = 0;
+    MaxNum = 0;
+    for (i = 0; i < N; i++)
+    {
         ThisNum = 0;
-		for (j = i; j < N; j++)
-		{
-			ThisNum += x[j];
-			if (ThisNum > MaxNum)
+        for (j = i; j < N; j++)
+        {
+            ThisNum += x[j];
+            if (ThisNum > MaxNum)
                 MaxNum = ThisNum;
-		}
-	}
-	return MaxNum;
+        }
+    }
+    return MaxNum;
 }
 int Max(int A, int B, int C)
 {
-	return A > B ? A > C ? A : C : B > C ? B : C;
+    return A > B ? A > C ? A : C : B > C ? B : C;
 }
 int DivideAndConquer(int List[], int left, int right)
 {
-    int MaxLeftSum, MaxRightSum; 
-    int MaxLeftBorderSum, MaxRightBorderSum; 
+    int MaxLeftSum, MaxRightSum;
+    int MaxLeftBorderSum, MaxRightBorderSum;
     int LeftBorderSum, RightBorderSum;
     int center;
 
-    if (left == right) { 
+    if (left == right) {
         if (List[left] > 0)  return List[left];
         else return 0;
     }
 
-    center = (left + right) / 2; 
+    center = (left + right) / 2;
     MaxLeftSum = DivideAndConquer(List, left, center);
     MaxRightSum = DivideAndConquer(List, center + 1, right);
 
@@ -62,25 +82,25 @@ int DivideAndConquer(int List[], int left, int right)
     }
     return Max(MaxLeftSum, MaxRightSum, MaxLeftBorderSum + MaxRightBorderSum);
 }
-int MaxSubseqSum2(int x[])//分而治之
+int MaxSubseqSum2(int x[])//Divide and rule
 {
     return DivideAndConquer(Subseq, 0, N - 1);
 }
-int MaxSubseqSum3(int x[])//在线处理
+int MaxSubseqSum3(int x[])//Online processing
 {
     ThisNum = 0;
     MaxNum = 0;
     for (i = 0; i < N; i++)
     {
         ThisNum += x[i];
-        if (ThisNum > MaxNum) 
+        if (ThisNum > MaxNum)
             MaxNum = ThisNum;
-        if (ThisNum < 0) 
+        if (ThisNum < 0)
             ThisNum = 0;
     }
     return MaxNum;
 }
-double Time(int x[] ,int (*p)(int []))
+double Time(int x[], int (*p)(int[]))
 {
     clock_t Start;
     Start = clock();
@@ -90,8 +110,9 @@ double Time(int x[] ,int (*p)(int []))
 }
 int main()
 {
-	inputNumber();
-	printf("The largest continuous sub-column sum is %10d, and it takes %10lf to run MaxSubseqSum1 for %d times. \n", MaxSubseqSum1(Subseq),Time(Subseq,MaxSubseqSum1),N);
+    inputNumber();
+  //printf("The largest continuous sub-column sum is %10d, and it takes %10lf to run MaxSubseqSum0 for %d times. \n", MaxSubseqSum0(Subseq), Time(Subseq, MaxSubseqSum0), N);
+    printf("The largest continuous sub-column sum is %10d, and it takes %10lf to run MaxSubseqSum1 for %d times. \n", MaxSubseqSum1(Subseq), Time(Subseq, MaxSubseqSum1), N);
     printf("The largest continuous sub-column sum is %10d, and it takes %10lf to run MaxSubseqSum2 for %d times. \n", MaxSubseqSum2(Subseq), Time(Subseq, MaxSubseqSum2), N);
     printf("The largest continuous sub-column sum is %10d, and it takes %10lf to run MaxSubseqSum3 for %d times. \n", MaxSubseqSum3(Subseq), Time(Subseq, MaxSubseqSum3), N);
     system("pause");
