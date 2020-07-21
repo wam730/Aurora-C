@@ -13,7 +13,7 @@ void inputNumber()
 		//printf("%d ", Subseq[i]);
 	}
 }
-int MaxSubseqSum1(int x[])//Çî¾ÙÈ«²¿Çé¿ö(ÊÓÆµÖÐËã·¨2)
+int MaxSubseqSum1(int x[])//ç©·ä¸¾å…¨éƒ¨æƒ…å†µ(è§†é¢‘ä¸­ç®—æ³•2)
 {
 	for (i = 0; i < N; i++)
 	{
@@ -62,11 +62,11 @@ int DivideAndConquer(int List[], int left, int right)
     }
     return Max(MaxLeftSum, MaxRightSum, MaxLeftBorderSum + MaxRightBorderSum);
 }
-int MaxSubseqSum2(int x[])//·Ö¶øÖÎÖ®
+int MaxSubseqSum2(int x[])//åˆ†è€Œæ²»ä¹‹
 {
     return DivideAndConquer(Subseq, 0, N - 1);
 }
-int MaxSubseqSum3(int x[])//ÔÚÏß´¦Àí
+int MaxSubseqSum3(int x[])//åœ¨çº¿å¤„ç†
 {
     ThisNum = 0;
     MaxNum = 0;
