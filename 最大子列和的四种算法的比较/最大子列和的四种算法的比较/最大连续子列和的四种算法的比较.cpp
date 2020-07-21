@@ -13,7 +13,24 @@ void inputNumber()
 		//printf("%d ", Subseq[i]);
 	}
 }
-int MaxSubseqSum1(int x[])//穷举全部情况(视频中算法2)
+int MaxSubseqSum0(int x[])//it's a bad way.
+{
+	int k;
+	for (i=0;i<N;i++)
+	{
+		for (j=i;j<N;j++)
+		{
+			for (k=i;k<=j;k++)
+			{
+				ThisNum += x[k];
+				if (ThisNum > MaxNum)
+					MaxNum = ThisNum;
+			}
+		}
+	}
+	return MaxNum
+}
+int MaxSubseqSum1(int x[])//Exhaustive method
 {
 	for (i = 0; i < N; i++)
 	{
@@ -62,11 +79,11 @@ int DivideAndConquer(int List[], int left, int right)
     }
     return Max(MaxLeftSum, MaxRightSum, MaxLeftBorderSum + MaxRightBorderSum);
 }
-int MaxSubseqSum2(int x[])//分而治之
+int MaxSubseqSum2(int x[])//Divide and rule
 {
     return DivideAndConquer(Subseq, 0, N - 1);
 }
-int MaxSubseqSum3(int x[])//在线处理
+int MaxSubseqSum3(int x[])//Online processing
 {
     ThisNum = 0;
     MaxNum = 0;
