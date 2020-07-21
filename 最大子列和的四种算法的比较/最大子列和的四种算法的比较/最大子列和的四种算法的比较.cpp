@@ -1,3 +1,4 @@
+//应该将名字修改为“最大连续子列和的四种算法的比较.cpp”，才更加严谨。
 #include<stdio.h>
 #include<time.h>
 #include<cstdlib>
