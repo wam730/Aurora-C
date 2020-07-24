@@ -1,2 +1,0 @@
-D:\source\my-c-code\n个数逆序排序\Debug\n个数逆序排序.exe
-D:\source\my-c-code\n个数逆序排序\Debug\n个数逆序排序.pdb

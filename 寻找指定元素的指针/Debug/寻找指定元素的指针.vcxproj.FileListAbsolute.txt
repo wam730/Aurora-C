@@ -1,2 +1,0 @@
-D:\source\my-c-code\寻找指定元素的指针\Debug\寻找指定元素的指针.exe
-D:\source\my-c-code\寻找指定元素的指针\Debug\寻找指定元素的指针.pdb
