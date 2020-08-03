@@ -1,21 +1,18 @@
-#include<stdio.h>
-#include<cstdlib>
+#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+#include <cstdlib>
 int main()
 {
-	int english(int);
-	int mouth;
-	printf("Please input mouth: ");
-	scanf_s("%d", &mouth);
-	printf("The English name of %d is %c", mouth, english(mouth));
+	const char* english(int);
+	int month;
+	printf("Please input month: ");
+	scanf("%d", &month);
+	printf("The English name of %d is %s", month, english(month));
 }
-char english(int mouth)
+const char* english(int month)
 {
-	char* pm;
-	char m[130] = { 'X','Jan.','Feb.','Mar.','Apr.','May.','Jun.','Jul.','Aug.','Sept',
-		'Oct.','Nov.','Dec.' };
-	pm = m;
-	if ((mouth >= 1) && (mouth <= 12))
-		return *(pm + mouth);
-	else
-		return *pm;
+	const char* m[13]= { "X","Jan.","Feb.","Mar.","Apr.","May.","Jun.","Jul.","Aug.","Sept",
+		"Oct.","Nov.","Dec." };
+	if ((month >= 1) && (month <= 12)) return m[month];
+	else return m[0];
 }
