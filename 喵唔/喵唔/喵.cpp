@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <cstdlib>
 #define ίχίχ main
 #define ίχίχίχ (
 #define ίχίχίν )
