@@ -1,0 +1,2 @@
+D:\OneDrive\文档\source\Aurora-C\线性表及其功能实现（链表）\Debug\线性表及其功能实现（链表）.exe
+D:\OneDrive\文档\source\Aurora-C\线性表及其功能实现（链表）\Debug\线性表及其功能实现（链表）.pdb
