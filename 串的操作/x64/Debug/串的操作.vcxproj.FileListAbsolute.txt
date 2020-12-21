@@ -1,0 +1,2 @@
+D:\OneDrive\文档\source\Aurora-C\串的操作\x64\Debug\串的操作.exe
+D:\OneDrive\文档\source\Aurora-C\串的操作\x64\Debug\串的操作.pdb

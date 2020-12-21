@@ -16,14 +16,16 @@ void InitStack(LinkStNode*& s)
 
 void DestroyStack(LinkStNode*& s)
 {
-	LinkStNode* pre = s, * p = s->next;
-	while (p!= NULL)
+	LinkStNode * p = s->next;
+	while (s!= NULL)
 	{
-		free(pre);
-		pre = p;
-		p = p->next;
+		free(s);
+		s = p;
+		if(p!=NULL)
+		{
+			p = p->next;
+		}
 	}
-	free(pre);
 }
 
 void Push(LinkStNode*& s, ElemType e)
@@ -37,7 +39,14 @@ void Push(LinkStNode*& s, ElemType e)
 
 bool StackEmpty(LinkStNode* s)
 {
-	return(s->next == NULL);
+	if (s != NULL)
+	{
+		return (s->next == NULL);
+	}
+	else
+	{
+		return true;
+	}
 }
 
 bool Pop(LinkStNode*& s, ElemType& e)

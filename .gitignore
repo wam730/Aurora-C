@@ -36,3 +36,7 @@ Project1/.vs/Project1/v16/.suo
 顺序栈的实现/.vs/顺序栈的实现/v16/.suo
 *.enc
 顺序栈的链式实现/.vs/顺序栈的链式实现/v16/.suo
+*.opendb
+*.db-wal
+*.db-shm
+串的操作/.vs/串的操作/v16/.suo
