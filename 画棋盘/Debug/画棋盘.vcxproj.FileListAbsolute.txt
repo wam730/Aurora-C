@@ -1,0 +1,2 @@
+D:\OneDrive\文档\source\Aurora-C\画棋盘\Debug\画棋盘.exe
+D:\OneDrive\文档\source\Aurora-C\画棋盘\Debug\画棋盘.pdb

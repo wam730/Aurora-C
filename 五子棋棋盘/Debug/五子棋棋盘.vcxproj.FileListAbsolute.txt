@@ -1,0 +1,2 @@
+D:\OneDrive\文档\source\Aurora-C\五子棋棋盘\Debug\五子棋棋盘.exe
+D:\OneDrive\文档\source\Aurora-C\五子棋棋盘\Debug\五子棋棋盘.pdb
